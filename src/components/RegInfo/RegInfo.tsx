@@ -1,7 +1,13 @@
 import { Link } from "react-router-dom";
 import { Span } from "../../components/UI";
 
-const RegInfo = ({ linkText, hasAccountText, authWithText }) => {
+interface IRegInfoProps {
+  linkText: string,
+  hasAccountText: string,
+  authWithText: string,
+}
+
+const RegInfo = ({ linkText, hasAccountText, authWithText }: IRegInfoProps) => {
   return (
     <div className="registration">
       <Span>

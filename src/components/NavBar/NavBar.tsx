@@ -1,13 +1,12 @@
-import "./MainPage.scss";
-import NavBar from "../../components/NavBar/NavBar";
+import NavBarItem from "./NavBarItem";
 
-export const MainPage = () => {
+const NavBar = () => {
   return (
     <div className="MainPage">
       <aside className="LeftSide">
-        <NavBar/>
-        {/* <nav className="Navbar">
+        <nav className="Navbar">
           <ul className="navbar__list">
+            <NavBarItem itemText="Test" badgeNumber={null}/>
             <li className="navbar__item">
               <svg
                 className="icon icon-profile"
@@ -163,7 +162,7 @@ export const MainPage = () => {
               <span className="Badge">100</span>
             </li>
           </ul>
-        </nav> */}
+        </nav>
         <div className="List">
           <div className="List__title">
             <h2>Подписки</h2>
@@ -724,3 +723,5 @@ export const MainPage = () => {
     </div>
   );
 };
+
+export default NavBar;
