@@ -9,7 +9,7 @@ export const LoginPage = () => {
       <form action="#">
         <Input type={"tel"} placeholder={"Номер телефона"} />
         <Input type={"password"} placeholder={"Пароль"} />
-        <Button text={"Войти"} />
+        <Button type="button" text={"Войти"} />
       </form>
       <Link to="/">Забыли пароль?</Link>
       <RegistrationInfo
