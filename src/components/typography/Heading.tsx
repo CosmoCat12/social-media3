@@ -1,4 +1,10 @@
-const Heading = ({ variant, text }) => {
+interface IHeadingProps {
+  variant: string,
+  text: string,
+}
+
+
+const Heading = ({ variant, text }: IHeadingProps) => {
   const renderHeading = () => {
     switch (variant) {
       case "h1":
