@@ -1,14 +1,18 @@
 import { Link } from "react-router-dom";
-import { Span } from "../../components/UI";
+import { Paragraph, Span } from "../../components/UI";
+interface IRegistrationInfo {
+  linkText: string,
+  hasAccountText: string,
+  authWithText: string,
+}
 
-const RegistrationInfo = ({ linkText, hasAccountText, authWithText }) => {
+const RegistrationInfo = ({ linkText, hasAccountText, authWithText}: IRegistrationInfo) => {
   return (
     <div className="registration">
       <Span>
         {hasAccountText} <Link to="/registration">{linkText}</Link>
       </Span>
-      {/* Тег P заменить на компонент */}
-      <p>{authWithText}</p>
+      <Paragraph >{authWithText}</Paragraph >
       <div className="icons-wrapper">
         <Link className="reg__link google-link" to="#">
           <img src="./img/icons/google.svg" alt="Google" />

@@ -5,6 +5,7 @@ import RegistrationInfo from "../RegistrationInfo/RegistrationInfo";
 import Span from "../typography/Span/Span";
 import { RegistrationPage } from "../../pages/RegistrationPage/RegistrationPage";
 import RegInfo from "../RegInfo/RegInfo";
+import Paragraph from "../typography/Paragraph/Paragraph";
 
 export {
   Input,
@@ -14,4 +15,5 @@ export {
   Span,
   RegistrationPage,
   RegInfo,
+  Paragraph,
 };
